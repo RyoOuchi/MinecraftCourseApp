@@ -1,0 +1,9 @@
+:root {
+    --primary-color: black;
+    --secondary-color: #1B1B1B;
+    --text-primary-color: white;
+    --text-secondary-color: #848484;
+    --hyperlink-color: #259FDE;
+    --japanese-primary-font: "Noto Sans JP", sans-serif;
+    --english-primary-font: "Noto Sans", sans-serif;
+}
