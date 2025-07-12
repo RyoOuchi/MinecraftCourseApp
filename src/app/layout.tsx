@@ -2,8 +2,6 @@ import { ReactNode } from "react";
 import { Noto_Sans_JP, Noto_Sans } from "next/font/google";
 import Header from "../components/Header";
 import "./globals.css";
-import LeftPanel from "@/components/LeftPanel";
-import RightPanel from "@/components/RightPanel";
 
 const notoJP = Noto_Sans_JP({
     subsets: ["latin"],
@@ -19,11 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <html lang="ja" className={`${notoJP.variable} ${noto.variable}`}>
             <body>
                 <Header />
-                <div className="main-wrapper">
-                    <LeftPanel />
-                    <RightPanel />
-                    <main>{children}</main>
-                </div>
+                <main>{children}</main>
             </body>
         </html>
     );
